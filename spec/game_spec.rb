@@ -18,6 +18,7 @@ describe Game do
     subject.choice("O", "a2")
     expect(subject.a1()).to eq "X"
     expect(subject.a2()).to eq "O"
+    expect(subject.c3()).to eq ""
 
   end
 
