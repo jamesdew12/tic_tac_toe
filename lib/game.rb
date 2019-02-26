@@ -10,7 +10,17 @@ class Game
     @c1 = ""
     @c2 = ""
     @c3 = ""
+  end
+
+  def choice(marker, position)
+    if position == "a1"
+      @a1 += marker
+    elsif position == "a2"
+
+    end
 
   end
+
+
 
 end

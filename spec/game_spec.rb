@@ -13,4 +13,10 @@ describe Game do
     expect(subject.c3()).to eq ""
   end
 
+  it "player can choose where to play a move" do
+    subject.choice("x", "a1")
+    expect(subject.a1()).to eq "x"
+
+  end
+
 end
