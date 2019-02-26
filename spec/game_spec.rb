@@ -1,7 +1,8 @@
 require 'game'
 
 describe Game do
-  it "text" do
+  it "board starts empty" do
+    expect(subject.a1()).to eq ""
 
   end
 
