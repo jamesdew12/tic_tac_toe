@@ -14,8 +14,10 @@ describe Game do
   end
 
   it "player can choose where to play a move" do
-    subject.choice("x", "a1")
-    expect(subject.a1()).to eq "x"
+    subject.choice("X", "a1")
+    subject.choice("O", "a2")
+    expect(subject.a1()).to eq "X"
+    expect(subject.a2()).to eq "O"
 
   end
 
