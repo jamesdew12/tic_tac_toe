@@ -13,22 +13,19 @@ describe Game do
     expect(subject.c3()).to eq ""
   end
 
-  it "text" do
-    subject.choice("X", "a1")
-    expect(subject.a1()).to eq "X"
-
-
-  end
-  it "text" do
+  it "player can play a move" do
     subject.choice("X", "a1")
     expect(subject.a1()).to eq "X"
   end
-   
-   it "text" do
+
+   it "can put in same spot" do
      subject.choice("X", "a1")
      expect{subject.choice("X", "a1") }.to raise_error "SPACE ALREADY TAKEN"
 
    end
+   # it "raise error" do
+   #   expect{subject.choice("y", "a1") }.to raise_error "Only use X or O"
+   # end
   # it "text" do
   #   subject.game(@a1)
   #   expect(subject.a1()).to eq "X"

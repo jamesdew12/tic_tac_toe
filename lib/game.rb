@@ -45,7 +45,8 @@ class Game
                     "c1" => @c1,
                     "c2" => @c2,
                     "c3" => @c3}
-      
+
+    
       fail "SPACE ALREADY TAKEN" if user_choice_hash[position] == "X"
       fail "SPACE ALREADY TAKEN" if user_choice_hash[position] == "O"
       user_choice_hash[position] << marker
