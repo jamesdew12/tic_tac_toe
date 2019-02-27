@@ -46,15 +46,10 @@ class Game
                     "c2" => @c2,
                     "c3" => @c3}
 
-    
+      fail 'Only use X or O' unless marker == "X" || marker == "O"
       fail "SPACE ALREADY TAKEN" if user_choice_hash[position] == "X"
       fail "SPACE ALREADY TAKEN" if user_choice_hash[position] == "O"
       user_choice_hash[position] << marker
-
-
-
-
-
   end
 
 end

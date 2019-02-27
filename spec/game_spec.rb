@@ -23,9 +23,9 @@ describe Game do
      expect{subject.choice("X", "a1") }.to raise_error "SPACE ALREADY TAKEN"
 
    end
-   # it "raise error" do
-   #   expect{subject.choice("y", "a1") }.to raise_error "Only use X or O"
-   # end
+   it "raise er" do
+     expect{subject.choice("y", "a1") }.to raise_error "Only use X or O"
+   end
   # it "text" do
   #   subject.game(@a1)
   #   expect(subject.a1()).to eq "X"
