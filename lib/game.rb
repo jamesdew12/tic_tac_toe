@@ -50,6 +50,8 @@ class Game
       fail "SPACE ALREADY TAKEN" if user_choice_hash[position] == "X"
       fail "SPACE ALREADY TAKEN" if user_choice_hash[position] == "O"
       user_choice_hash[position] << marker
+
+
   end
 
 end
