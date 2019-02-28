@@ -26,5 +26,14 @@ describe Game do
    it "raise error if not X or O " do
      expect{subject.choice("y", "a1") }.to raise_error "Only use X or O"
    end
+   it "User can win game" do
+     subject.choice("X", "a1")
+     subject.choice("O", "b1")
+     subject.choice("X", "a2")
+     subject.choice("O", "c1")
+     expect(subject.choice("X", "a3")).to eq 'Player X has won GAME OVER'
+
+
+   end
 
 end

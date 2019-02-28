@@ -28,7 +28,10 @@ class Game
       fail "SPACE ALREADY TAKEN" if user_choice_hash[position] == "O"
       user_choice_hash[position] << marker
 
+      if @a1 == @a2 && @a2 == @a3 && @a1 == @a3
+        "Player #{@a1} has won, GAME OVER"
+      end
+
 
   end
-
 end
