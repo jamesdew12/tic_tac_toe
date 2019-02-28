@@ -31,7 +31,7 @@ describe Game do
      subject.choice("O", "b1")
      subject.choice("X", "a2")
      subject.choice("O", "c1")
-     expect(subject.choice("X", "a3")).to eq 'Player X has won GAME OVER'
+     expect(subject.choice("X", "a3")).to eq 'Player X has won, GAME OVER'
 
 
    end

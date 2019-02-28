@@ -30,6 +30,11 @@ class Game
 
       if @a1 == @a2 && @a2 == @a3 && @a1 == @a3
         "Player #{@a1} has won, GAME OVER"
+      elsif @b1 == @b2 && @b2 == @b3 && @b1 == @b3
+        "Player #{@b1} has won, GAME OVER"
+      elsif @c1 == @c2 && @c2 == @c3 && @c1 == @c3
+        "Player #{@c1} has won, GAME OVER"
+
       end
 
 
