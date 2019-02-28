@@ -26,24 +26,5 @@ describe Game do
    it "raise error if not X or O " do
      expect{subject.choice("y", "a1") }.to raise_error "Only use X or O"
    end
-  # it "text" do
-  #   subject.game(@a1)
-  #   expect(subject.a1()).to eq "X"
-  #
-  # end
-  #
-  # it "player can choose where to play a move" do
-  #   subject.choice("X", "a1")
-  #   subject.choice("O", "a2")
-  #   expect(subject.a1()).to eq "X"
-  #   expect(subject.a2()).to eq "O"
-  #   expect(subject.c3()).to eq ""
-  # end
-  #
-  # it "raises an error if space already taken" do
-  #   subject.choice("O", "a2")
-  #   expect{subject.choice("X", "a2")}.to raise_error "Move already happened"
-  #
-  # end
 
 end
